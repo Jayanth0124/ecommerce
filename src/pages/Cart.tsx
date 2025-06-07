@@ -77,14 +77,14 @@ export const Cart: React.FC = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-dark-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6"
               >
-                <div className="flex items-center space-x-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start space-x-0 sm:space-x-6">
                   <img
                     src={item.phone.image}
                     alt={item.phone.name}
-                    className="w-24 h-24 object-cover rounded-xl"
+                    className="w-16 h-16 sm:w-24 sm:h-24 object-cover rounded-xl"
                   />
                   
-                  <div className="flex-1">
+                  <div className="flex-1 mt-4 sm:mt-0">
                     <h3 className="text-white font-semibold text-lg mb-1">{item.phone.name}</h3>
                     <p className="text-gray-400 text-sm mb-2">{item.phone.brand}</p>
                     <p className="text-primary-400 text-sm">Color: {item.selectedColor}</p>
