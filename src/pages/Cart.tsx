@@ -130,7 +130,7 @@ export const Cart: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="bg-dark-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sticky top-24"
+              className="bg-dark-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-6 lg:sticky lg:top-24"
             >
               <h2 className="text-xl font-semibold text-white mb-6">Order Summary</h2>
               
