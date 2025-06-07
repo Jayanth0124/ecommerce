@@ -5,13 +5,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChang
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCaqdm3UzBe8-E6R3KAgdUB5aj0j0ogHiQ",
-  authDomain: "ecommerce-a9dea.firebaseapp.com",
-  projectId: "ecommerce-a9dea",
-  storageBucket: "ecommerce-a9dea.firebasestorage.app",
-  messagingSenderId: "305620346946",
-  appId: "1:305620346946:web:eed5802dabe64d9cf565db",
-  measurementId: "G-PL9WDNXLX4"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
